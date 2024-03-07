@@ -35,7 +35,7 @@ describe('<Character/> component', () => {
     it('renders an img tag with a role of presentation and the correct name', () => {
         render(<Character { ...characterProps } />);
 
-        const characterImg = screen.getByRole('presentation', { name: characterProps.fullName });
+        const characterImg = screen.getByRole('img', { name: characterProps.fullName });
         expect(characterImg).toBeDefined();
     });
 
